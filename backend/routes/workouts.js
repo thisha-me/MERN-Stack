@@ -8,8 +8,8 @@ router.get('/', (req,res)=>{
 })
 
 //get single workout
-router.get('/', (req,res)=>{
-    res.json({mssg: "GET all workouts"})
+router.get('/:id', (req,res)=>{
+    res.json({mssg: "GET a single workouts"})
 })
 
  
@@ -25,7 +25,7 @@ router.delete('/:id', (req,res)=>{
 
 // UPDATE a workout
 router.patch('/:id', (req,res)=>{
-    res.json({mssg: "update a workout"})
+    res.json({mssg: "UPDATE a workout"})
 })
 
 module.exports=router
